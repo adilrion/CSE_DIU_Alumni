@@ -4,13 +4,15 @@ import { Disclosure } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import logo from "../../Images/diuLogo.png";
 import facebook from "../../Images/Logo/facebook.png";
+import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "home", href: "home", current: true },
+  { name: "Home", href: "home", current: true },
+  { name: "Committee", href: "committee", current: true },
   { name: "Gallery", href: "gallery", current: true },
   { name: "Notice Board", href: "notice-board", current: true },
-  { name: "About Us", href: "about-us", current: false },
-  { name: "Contact Us", href: "contact-us", current: false },
+  { name: "About Us", href: "about-us", current: true },
+  { name: "Contact Us", href: "contact-us", current: true },
 ];
 
 function classNames(...classes) {
@@ -51,22 +53,18 @@ const Navigation = () => {
               <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
+                    <Link
+                      to={item.href}
                       className="text-white font-[500] text-[18px] p-4"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
 
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
-                  type="button"
-                  className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                >
+                <button type="button" className="">
                   <span className="sr-only">View notifications</span>
                   <img src={facebook} alt="Facebook logo" />
                 </button>
@@ -77,15 +75,13 @@ const Navigation = () => {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col">
               {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className="text-white font-[500] text-[18px] p-4"
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>
