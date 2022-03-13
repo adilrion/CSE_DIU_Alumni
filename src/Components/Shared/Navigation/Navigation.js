@@ -3,12 +3,14 @@ import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import logo from "../../Images/diuLogo.png";
+import facebook from "../../Images/Logo/facebook.png";
 
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: true },
-  { name: "Projects", href: "#", current: true },
-  { name: "Calendar", href: "#", current: false },
+  { name: "home", href: "home", current: true },
+  { name: "Gallery", href: "gallery", current: true },
+  { name: "Notice Board", href: "notice-board", current: true },
+  { name: "About Us", href: "about-us", current: false },
+  { name: "Contact Us", href: "contact-us", current: false },
 ];
 
 function classNames(...classes) {
@@ -53,7 +55,6 @@ const Navigation = () => {
                       key={item.name}
                       href={item.href}
                       className="text-white font-[500] text-[18px] p-4"
-                      aria-current={item.current ? "page" : undefined}
                     >
                       {item.name}
                     </a>
@@ -67,20 +68,20 @@ const Navigation = () => {
                   className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
                   <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                  <img src={facebook} alt="Facebook logo" />
                 </button>
               </div>
             </div>
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className="text-gray-300 p-4 hover:bg-gray-700 hover:text-white"
+                  className="text-white font-[500] text-[18px] p-4"
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
