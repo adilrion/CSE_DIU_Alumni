@@ -7,15 +7,15 @@ const Footer = () => {
     <footer className="footer">
       <div className="mx-auto px-2 bg-[#1F1F52] sm:px-6 lg:px-44">
         <div>
-          <footer class="p-4 bg-[#1F1F52] shadow md:px-6 md:py-8 ">
+          <footer class="py-4 bg-[#1F1F52] shadow  md:py-8 ">
             <div class="sm:flex sm:items-center sm:justify-between">
               <Link to="/home" class="flex items-center mb-4 sm:mb-0">
                 <img src={logo} class="mr-3 h-8" alt="Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">
                   CSE DIU Alumni
                 </span>
               </Link>
-              <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+              <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-100 sm:mb-0 ">
                 <li>
                   <Link to="/about-us" class="mr-4  md:mr-6 ">
                     About
@@ -38,8 +38,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+            <span class="block text-sm text-gray-100 sm:text-center">
               © 2022{" "}
               <Link to="/home" class="">
                 CSE DIU Alumni
