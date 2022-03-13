@@ -1,9 +1,12 @@
 import React from "react";
+import Banner from "../Pages/Banner/Banner";
+import Navigation from "../Shared/Navigation/Navigation";
 
 const Home = () => {
   return (
     <div>
-      <h1>available</h1>
+      <Navigation></Navigation>
+      <Banner></Banner>
     </div>
   );
 };

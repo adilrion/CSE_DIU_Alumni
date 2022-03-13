@@ -17,10 +17,10 @@ function classNames(...classes) {
 
 const Navigation = () => {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-[#1F1F52]">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto px-2 sm:px-6 lg:px-44">
             <div className="relative flex items-center justify-center md:justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center  sm:hidden">
                 {/* Mobile menu button*/}
@@ -36,12 +36,12 @@ const Navigation = () => {
 
               <div className="flex-shrink-0 flex items-center">
                 <img
-                  className="block lg:hidden h-8 w-auto"
+                  className="block lg:hidden h-12 w-auto"
                   src={logo}
                   alt="Workflow"
                 />
                 <img
-                  className="hidden lg:block h-8 w-auto"
+                  className="hidden lg:block h-12 w-auto"
                   src={logo}
                   alt="Workflow"
                 />
@@ -52,7 +52,7 @@ const Navigation = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-gray-300 p-4 hover:bg-gray-700 hover:text-white"
+                      className="text-white font-[500] text-[18px] p-4"
                       aria-current={item.current ? "page" : undefined}
                     >
                       {item.name}

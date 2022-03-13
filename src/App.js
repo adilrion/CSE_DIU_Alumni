@@ -1,9 +1,9 @@
-import Navigation from "./Components/Shared/Navigation/Navigation";
+import Home from "./Components/Home/Home";
 
 function App() {
   return (
     <div>
-      <Navigation></Navigation>
+      <Home></Home>
     </div>
   );
 }
