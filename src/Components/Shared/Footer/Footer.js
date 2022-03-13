@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <footer class="p-4 bg-[#1F1F52] shadow md:px-6 md:py-8 ">
             <div class="sm:flex sm:items-center sm:justify-between">
-              <Link to="home" class="flex items-center mb-4 sm:mb-0">
+              <Link to="/home" class="flex items-center mb-4 sm:mb-0">
                 <img src={logo} class="mr-3 h-8" alt="Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                   CSE DIU Alumni
@@ -17,25 +17,22 @@ const Footer = () => {
               </Link>
               <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
-                  <Link to="about-us" class="mr-4 hover:underline md:mr-6 ">
+                  <Link to="/about-us" class="mr-4  md:mr-6 ">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="privacy-policy"
-                    class="mr-4 hover:underline md:mr-6"
-                  >
+                  <Link to="/privacy-policy" class="mr-4  md:mr-6">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link to="Contact" class="mr-4 hover:underline md:mr-6 ">
+                  <Link to="/contact-us" class="mr-4  md:mr-6 ">
                     Contact
                   </Link>
                 </li>
                 <li>
-                  <Link to="notice-board" class="hover:underline">
+                  <Link to="/notice-board" class="">
                     Notice Board
                   </Link>
                 </li>
@@ -44,9 +41,9 @@ const Footer = () => {
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
               © 2022{" "}
-              <a href="https://flowbite.com" class="hover:underline">
+              <Link to="/home" class="">
                 CSE DIU Alumni
-              </a>
+              </Link>
               . All Rights Reserved.
             </span>
           </footer>
