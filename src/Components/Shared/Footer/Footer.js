@@ -1,10 +1,58 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../../Images/diuLogo.png";
 
 const Footer = () => {
   return (
-    <div>
-      <h1>this is website</h1>
-    </div>
+    <footer className="footer">
+      <div className="mx-auto px-2 bg-[#1F1F52] sm:px-6 lg:px-44">
+        <div>
+          <footer class="p-4 bg-[#1F1F52] shadow md:px-6 md:py-8 ">
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <Link to="home" class="flex items-center mb-4 sm:mb-0">
+                <img src={logo} class="mr-3 h-8" alt="Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                  CSE DIU Alumni
+                </span>
+              </Link>
+              <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                  <Link to="about-us" class="mr-4 hover:underline md:mr-6 ">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="privacy-policy"
+                    class="mr-4 hover:underline md:mr-6"
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="Contact" class="mr-4 hover:underline md:mr-6 ">
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link to="notice-board" class="hover:underline">
+                    Notice Board
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+              © 2022{" "}
+              <a href="https://flowbite.com" class="hover:underline">
+                CSE DIU Alumni
+              </a>
+              . All Rights Reserved.
+            </span>
+          </footer>
+        </div>
+      </div>
+    </footer>
   );
 };
 
