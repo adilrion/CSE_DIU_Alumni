@@ -32,7 +32,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/notice-board" class="">
+                  <Link to="/program-events" class="">
                     Notice Board
                   </Link>
                 </li>

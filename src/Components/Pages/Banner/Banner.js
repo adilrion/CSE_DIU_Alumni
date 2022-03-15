@@ -9,11 +9,11 @@ const Banner = () => {
         <Fade bottom cascade>
           <div className="text-center">
             <h3 className="text-md md:text-xl mb-6 font-[500] text-[#eee] uppercase">
-              Lorem ipsum dolor sit amet
+              We are not just Friend, We are Family
             </h3>
             <h1 className="text-3xl md:text-6xl mb-4 font-[600] text-[#eee] capitalize">
-              Lorem ipsum dolor sit amet consectetur{" "}
-              <span className="text-[#da330e]">adipisicing</span>
+              Don’t Miss Awesome Story From Our{" "}
+              <span className="text-[#da330e]">CSE DIU Alumni</span>{" "}
             </h1>
             <p className="text-sm font-[500] text-[#bbbbbb] capitalize">
               Lorem ipsum dolor sit amet.
@@ -23,7 +23,7 @@ const Banner = () => {
               type="button"
               class="text-white mt-8 bg-[#da330e] font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center uppercase"
             >
-              Fill up Form
+              Join with Alumni Forum
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 ml-2"

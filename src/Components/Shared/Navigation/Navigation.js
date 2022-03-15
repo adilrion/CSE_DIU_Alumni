@@ -1,16 +1,15 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Link } from "react-router-dom";
 import logo from "../../Images/diuLogo.png";
 import facebook from "../../Images/Logo/facebook.png";
-import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "home", current: true },
   { name: "Committee", href: "committee", current: true },
-  { name: "Gallery", href: "gallery", current: true },
-  { name: "Notice Board", href: "notice-board", current: true },
+  { name: "Alumni Stories", href: "gallery", current: true },
+  { name: "Program & Events", href: "program-events", current: true },
   { name: "About Us", href: "about-us", current: true },
   { name: "Contact Us", href: "contact-us", current: true },
 ];
@@ -51,11 +50,11 @@ const Navigation = () => {
                 />
               </div>
               <div className="hidden sm:block sm:ml-6">
-                <div className="flex space-x-4">
+                <div className="flex gap-1">
                   {navigation.map((item) => (
                     <Link
                       to={item.href}
-                      className="text-white font-[500] text-[18px] p-4"
+                      className="text-white font-[500] text-[13px] py-4 px-2"
                     >
                       {item.name}
                     </Link>
@@ -77,7 +76,7 @@ const Navigation = () => {
               {navigation.map((item) => (
                 <Link
                   to={item.href}
-                  className="text-white font-[500] text-[18px] p-4"
+                  className="text-white font-[500] text-[13px] p-4"
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}

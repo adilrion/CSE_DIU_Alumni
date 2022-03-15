@@ -1,0 +1,18 @@
+.eventContainer {
+  min-height: 330px;
+}
+.events-c {
+  background-image: linear-gradient(#1f1f52 15.21%, rgba(28, 52, 95, 0) 60.31%),
+    url("http://www.astate.edu/dotAsset/8b0273f9-64ef-41b4-9c61-e1976e5c6956");
+  background-size: cover;
+}
+.event-photos {
+  height: 330px;
+  background-image: linear-gradient(
+      30deg,
+      #1f1f528f 15.21%,
+      rgba(28, 52, 95, 0) 60.31%
+    ),
+    url("http://www.astate.edu/dotAsset/8b0273f9-64ef-41b4-9c61-e1976e5c6956");
+  background-size: cover;
+}
