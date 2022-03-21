@@ -1,6 +1,7 @@
 import React from "react";
 import "./Banner.css";
 import Fade from "react-reveal/Fade";
+import { Rotate, Zoom } from "react-reveal";
 
 const Banner = () => {
   return (
@@ -12,8 +13,10 @@ const Banner = () => {
               We are not just Friend, We are Family
             </h3>
             <h1 className="text-3xl md:text-6xl mb-4 font-[600] text-[#eee] capitalize">
-              Don’t Miss Awesome Story From Our{" "}
-              <span className="text-[#da330e]">CSE DIU Alumni</span>{" "}
+              Don’t Miss <br /> Awesome Story From Our <br />
+              <Zoom right cascade>
+                <span className="text-[#da330e]">CSE DIU Alumni</span>{" "}
+              </Zoom>
             </h1>
             <p className="text-sm font-[500] text-[#bbbbbb] capitalize">
               Lorem ipsum dolor sit amet.

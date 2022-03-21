@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ProgramEvent.css";
-const NoticeBoard = () => {
+const ProgramEvents = () => {
   const [dateState, setDateState] = useState(new Date());
   useEffect(() => {
     setInterval(() => setDateState(new Date()), 30000);
@@ -63,8 +63,14 @@ const NoticeBoard = () => {
           </div>
         </div>
       </div>
+
+      <div className="mx-auto px-2 sm:px-6 lg:px-44">
+        <h1 className="text-[#1F1F52] rounded shadow bg-[#ffffff] py-5 pl-2 text-3xl font-bold my-5">
+          Recent successfully completed Events
+        </h1>
+      </div>
     </section>
   );
 };
 
-export default NoticeBoard;
+export default ProgramEvents;
