@@ -1,0 +1,16 @@
+.check input:invalid {
+  border-color: red;
+}
+
+/* FLOATING LABEL */
+.label-floating input:not(:placeholder-shown),
+.label-floating textarea:not(:placeholder-shown) {
+  padding-top: 1.4rem;
+}
+.label-floating input:not(:placeholder-shown) ~ label,
+.label-floating textarea:not(:placeholder-shown) ~ label {
+  font-size: 0.8rem;
+  transition: all 0.2s ease-in-out;
+  color: #1f1f52;
+  opacity: 1;
+}

@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import AboutUs from "./Components/Pages/AboutUs/AboutUs";
 import Committees from "./Components/Pages/Committee/Committees";
-import ContactUs from "./Components/Pages/ContactUs/ContactUs";
+import ContactPage from "./Components/Pages/ContactUs/ContactPage";
 import Gallery from "./Components/Pages/Gallery/GalleryH";
 import ProgramEventPage from "./Components/Pages/ProgramEvents/ProgramEventPage";
 import Error from "./Components/Shared/Error/Error";
@@ -19,7 +19,7 @@ function App() {
           <Route path="home" element={<Home />} />
           <Route path="committee" element={<Committees />} />
           <Route path="about-us" element={<AboutUs />} />
-          <Route path="contact-us" element={<ContactUs />} />
+          <Route path="contact-us" element={<ContactPage />} />
           <Route path="program-events" element={<ProgramEventPage />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="*" element={<Error />} />

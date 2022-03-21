@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Zoom } from "react-reveal";
 import "./ProgramEvent.css";
 const ProgramEvents = () => {
   const [dateState, setDateState] = useState(new Date());
@@ -8,7 +9,7 @@ const ProgramEvents = () => {
 
   return (
     <section className="upcoming-events">
-      <div className="bg-[#1F1F52] events-c md:py-20 py-5">
+      <div className="bg-[#1F1F52] events-c md:py-36 py-5">
         <div className="mx-auto px-2 sm:px-6 lg:px-44">
           <div className="eventContainer">
             <div className="grid grid-cols-12 gap-y-10">
@@ -31,8 +32,11 @@ const ProgramEvents = () => {
               </div>
               <div className="col-span-12 md:col-span-7  flex flex-col justify-center px-10">
                 <h3 className="text-gray-100 text-xl">
-                  UPCOMING EVENT{" "}
-                  <span className="text-sm">AUGUST 18, 2022</span>
+                  <span>UPCOMING EVENT </span>
+
+                  <Zoom right cascade>
+                    <span className="text-sm">AUGUST 18, 2022</span>
+                  </Zoom>
                 </h3>
                 <h1 className="text-white text-4xl font-semibold py-2">
                   WEEKEND AT SAYIDAN SIERRA CAMP
@@ -68,6 +72,12 @@ const ProgramEvents = () => {
         <h1 className="text-[#1F1F52] rounded shadow bg-[#ffffff] py-5 pl-2 text-3xl font-bold my-5">
           Recent successfully completed Events
         </h1>
+
+        <article>
+          <div>
+            <h1>....</h1>
+          </div>
+        </article>
       </div>
     </section>
   );
