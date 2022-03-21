@@ -54,7 +54,7 @@ const Navigation = () => {
                   {navigation.map((item) => (
                     <Link
                       to={item.href}
-                      className="text-white font-[500] text-[13px] py-4 px-2"
+                      className="text-white font-[500] text-[15px] py-4 px-2"
                     >
                       {item.name}
                     </Link>
