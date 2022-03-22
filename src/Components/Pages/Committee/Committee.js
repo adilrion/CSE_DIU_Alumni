@@ -2,36 +2,30 @@ import React from "react";
 import quadir from "../../Images/AdvisoryCommittee/Quadir.png";
 import babu from "../../Images/AdvisoryCommittee/Hasan-Babu.jpg";
 import mahbub from "../../Images/AdvisoryCommittee/mahbubur-rahman.png";
-import nurul from "../../Images/AdvisoryCommittee/nurul-momen.png";
+import Ganesh from "../../Images/AdvisoryCommittee/ganesh.jpg";
 import samim from "../../Images/AdvisoryCommittee/Samim.png";
 import sanaullah from "../../Images/AdvisoryCommittee/sana-ullah.png";
+import based from "../../Images/AdvisoryCommittee/sir.jpg";
 import { Link } from "react-router-dom";
 
 const advisors = [
   {
-    id: 2,
+    id: 1,
     name: "Barrister Shameem Haider Patwary",
     href: "#",
-    title: "Vice-Chairman Board of Trustees,DIU",
+    title: "Chairman,Board of Trustees,DIU",
     imageSrc: `${samim}`,
     imageAlt:
-      "Olive drab green insulated bottle with flared screw lid and flat top.",
+      "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
   },
+
   {
     id: 3,
-    name: "Professor Dr. Nurul Momen",
+    name: "Professor Dr. Ganesh Chandra Saha",
     href: "#",
     title: "Vice-chancellor,DIU",
-    imageSrc: `${nurul}`,
+    imageSrc: `${Ganesh}`,
     imageAlt: "Professor Dr. Nurul Momen",
-  },
-  {
-    id: 4,
-    name: "Dr. Md. Sana Ullah",
-    href: "#",
-    title: "Dean,Faculty of Science and Engineering,DIU",
-    imageSrc: `${sanaullah}`,
-    imageAlt: "Dean,Faculty of Science and Engineering,DIU",
   },
   {
     id: 5,
@@ -43,11 +37,19 @@ const advisors = [
   },
   {
     id: 6,
-    name: "Assoc.Prof.ATM Mahbubur Rahman",
+    name: "Professor Dr. A.T.M Mahbubur Rahman Sarkar",
     href: "#",
-    title: "Chairman,Department of CSE,DIU",
+    title: "Dean(Acting) Chairman, Department of CSE, DIU",
     imageSrc: `${mahbub}`,
     imageAlt: "Chairman,Department of CSE,DIU",
+  },
+  {
+    id: 2,
+    name: "Md. Abdul Based",
+    href: "#",
+    title: "Professor & Chairman, Department of EEE, DIU",
+    imageSrc: `${based}`,
+    imageAlt: "Md. Abdul Based images",
   },
 ];
 
@@ -71,7 +73,7 @@ const Committee = () => {
                     <img
                       src={advisor.imageSrc}
                       alt={advisor.imageAlt}
-                      className="w-full h-full object-center object-cover group-hover:opacity-75 "
+                      className="w-full h-[370px] object-center object-cover group-hover:opacity-75 "
                     />
                   </div>
                   <div className="pl-2 py-3">
@@ -104,7 +106,7 @@ const Committee = () => {
                     <img
                       src={advisor.imageSrc}
                       alt={advisor.imageAlt}
-                      className="w-full h-full object-center object-cover group-hover:opacity-75 "
+                      className="w-full h-[370px] object-center object-cover group-hover:opacity-75 "
                     />
                   </div>
                   <div className="pl-2 py-3">
