@@ -6,7 +6,7 @@ import { Rotate, Zoom } from "react-reveal";
 const Banner = () => {
   return (
     <section className="">
-      <div className="mx-auto flex flex-col justify-center items-center px-2 sm:px-6 lg:px-44 bg-[#1F1F52] banner md:py-20">
+      <div className="mx-auto flex flex-col justify-center items-center px-2 sm:px-6 lg:px-44 bg-[#1F1F52] banner md:py-20 py-20">
         <Fade bottom cascade>
           <div className="text-center">
             <h3 className="text-md md:text-xl mb-6 font-[500] text-[#eee] uppercase">
@@ -14,9 +14,7 @@ const Banner = () => {
             </h3>
             <h1 className="text-3xl md:text-6xl mb-4 font-[600] text-[#eee] capitalize">
               Don’t Miss <br /> Awesome Story From Our <br />
-              <Zoom right cascade>
-                <span className="text-[#da330e]">CSE DIU Alumni</span>{" "}
-              </Zoom>
+              <span className="text-[#da330e]">CSE DIU Alumni</span>{" "}
             </h1>
             <p className="text-sm font-[500] text-[#bbbbbb] capitalize">
               Lorem ipsum dolor sit amet.

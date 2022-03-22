@@ -5,8 +5,8 @@ import "./ContactUs.css";
 const ContactUs = () => {
   return (
     <section className="mx-auto px-2 sm:px-6 lg:px-44 py-16">
-      <div className="grid md:grid-cols-2 grid-cols-1">
-        <div className="col-span-1 w-full mx-auto  bg-white p-8 text-gray-700 ">
+      <div className="grid md:grid-cols-2 bg-white grid-cols-1">
+        <div className="col-span-1 w-full mx-auto p-8 text-gray-700 ">
           <h1 className="text-[#1F1F52] mb-5 text-3xl font-bold uppercase">
             Get In Touch
           </h1>
@@ -102,11 +102,8 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1">
-          <form
-            id="contact-me"
-            class="w-full mx-auto  bg-white p-8 text-gray-900 "
-          >
+        <div className="col-span-1 flex items-center">
+          <form id="contact-me" class="w-full mx-auto   p-8 text-gray-900 ">
             <div class="flex flex-wrap mb-6">
               <div class="relative w-full appearance-none label-floating">
                 <input

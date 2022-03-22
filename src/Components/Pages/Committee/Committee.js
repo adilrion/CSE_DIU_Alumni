@@ -9,15 +9,6 @@ import { Link } from "react-router-dom";
 
 const advisors = [
   {
-    id: 1,
-    name: "Dr.S. Quadir Patwari",
-    href: "#",
-    title: "Chairman,Board of Trustees,DIU",
-    imageSrc: `${quadir}`,
-    imageAlt:
-      "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
-  },
-  {
     id: 2,
     name: "Barrister Shameem Haider Patwary",
     href: "#",

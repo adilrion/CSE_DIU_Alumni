@@ -5,7 +5,7 @@ import logo from "../../Images/diuLogo.png";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="mx-auto px-2 bg-[#1F1F52] sm:px-6 lg:px-44">
+      <div className="mx-auto px-2 bg-[#1F1F52] sm:px-6 lg:px-44 pt-5">
         <div>
           <footer class="py-4 bg-[#1F1F52] shadow  md:py-8 ">
             <div class="sm:flex sm:items-center sm:justify-between">
